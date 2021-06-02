@@ -19,7 +19,6 @@ from users import views as user_view
 from django.contrib.auth import views as auth_views
 from django.conf import settings
 from django.conf.urls.static import static
-from users.views import PlanDetailView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -27,7 +26,7 @@ urlpatterns = [
     path('profile/', user_view.profile, name='profile'),
     path('login/', auth_views.LoginView.as_view(template_name='users/login.html'), name='login'),
     path('logout/', auth_views.LogoutView.as_view(template_name='users/logout.html'), name='logout'),
-    path('plan/<int:pk>', PlanDetailView.as_view(), name='plan-detail'),
+    path('plan/<int:pk>', user_view.plan_update, name='plan-detail'),
     path('', user_view.home, name='user-home')
 ]
 

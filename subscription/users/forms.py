@@ -27,8 +27,3 @@ class ProfileUpdateForm(forms.ModelForm):
         model = Profile
         fields = ['image']
 
-
-class PlanUpdateForm(forms.ModelForm):
-    class Meta:
-        model = Profile
-        fields = ['plan_name', 'subs_date']

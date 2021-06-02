@@ -1,6 +1,6 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
-from .forms import UserRegisterForm, UserUpdateForm, ProfileUpdateForm, PlanUpdateForm
+from .forms import UserRegisterForm, UserUpdateForm, ProfileUpdateForm
 from datetime import date
 import datetime
 from dateutil.relativedelta import relativedelta
@@ -8,6 +8,7 @@ from django.contrib.auth.decorators import login_required
 from .models import Plan, Profile
 from django.views.generic import DetailView
 from django.contrib.auth.mixins import LoginRequiredMixin
+
 
 def home(request):
     return render(request, 'users/home.html', {'plans': list(Plan.objects.all())[1:]})
@@ -58,13 +59,35 @@ def profile(request):
     return render(request, 'users/profile.html', context)
 
 
-class PlanDetailView(LoginRequiredMixin, DetailView):
-    model = Plan
+@login_required
+def plan_update(request, pk=1):
 
-    def post(self, request):
-        if request.method == 'POST':
-            plan = self.get_object()
-            Profile.objects.filter(pk=self.request.user.pk).update(plan_name=plan.plan_name,
-                                                                   subs_date=datetime.datetime.utcnow())
-            messages.success(request, f'You have subscribed!')
-            return redirect('user-home')
+    if request.method == 'POST':
+        plan_id = int(request.POST.get('plan_id'))
+        plan = get_object_or_404(Plan, pk=pk)
+
+        Profile.objects.filter(user=request.user).update(plan_name=plan,
+                                                               subs_date=datetime.datetime.utcnow())
+        profile = Profile.objects.filter(user=request.user)
+        print(plan.plan_name)
+        print(profile)
+        messages.success(request, f'You have been subscribed!')
+        return redirect('user-home')
+
+    else:
+        plan = get_object_or_404(Plan, pk=pk)
+        context = {
+            'plan': plan
+            }
+        return render(request, 'users/plan_detail.html', context)
+
+
+# class PlanDetailView(LoginRequiredMixin, DetailView):
+#     model = Plan
+#
+#     def form_valid(self, form):
+#         plan = self.get_object()
+#         Profile.objects.filter(pk=self.request.user.pk).update(plan_name=plan.id,
+#                                                                subs_date=datetime.datetime.utcnow())
+#         messages.success(f'You have subscribed!')
+#         return super(Profile, self).form_valid(form)

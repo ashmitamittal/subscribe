@@ -1,0 +1,19 @@
+{% extends "users/base.html" %}
+
+{% block content %}
+
+      </div>
+        <h2 class="article-title">{{ plan.plan_name }}</h2>
+        <p class="article-content">{{ plan.description }}<br>Amount: Rs.{{ plan.amount }}<br>Validity: {{plan.validity}} months</p>
+        <p>You are about to purchase the {{ plan.plan_name }}.</p>
+      </div>
+  <div>
+      <form method="POST">
+          {% csrf_token %}
+          <input value="{{ plan.id }}" id="plan_id" type="hidden" name="plan_id">
+          <input class="btn btn-secondary btn-sm mt-1 mb-1" type="submit" value="Purchase">
+          <a class="btn btn-danger btn-sm mt-1 mb-1" href="{% url 'user-home' %}">Cancel</a>
+      </form>
+  </div>
+
+{% endblock %}
