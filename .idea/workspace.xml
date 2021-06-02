@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="da28a90e-4e2f-445c-9140-ae33aa17321d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subscription/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/subscription/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subscription/subscription/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/subscription/subscription/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subscription/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/subscription/users/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subscription/users/templates/users/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/subscription/users/templates/users/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subscription/users/templates/users/plan_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/subscription/users/templates/users/plan_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subscription/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/subscription/users/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="da28a90e-4e2f-445c-9140-ae33aa17321d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,6 +54,14 @@
       <option name="presentableId" value="Default" />
       <updated>1622111778740</updated>
     </task>
+    <task id="LOCAL-00001" summary="Plan can be updated. Changes added for the user">
+      <created>1622644725454</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1622644725454</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -74,5 +74,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Plan can be updated. Changes added for the user" />
+    <option name="LAST_COMMIT_MESSAGE" value="Plan can be updated. Changes added for the user" />
   </component>
 </project>
