@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="da28a90e-4e2f-445c-9140-ae33aa17321d" name="Default Changelist" comment="" />
+    <list default="true" id="da28a90e-4e2f-445c-9140-ae33aa17321d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/subscription/users/templates/users/password_reset.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subscription/users/templates/users/password_reset_complete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subscription/users/templates/users/password_reset_confirm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subscription/users/templates/users/password_reset_done.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subscription/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/subscription/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subscription/subscription/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/subscription/subscription/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subscription/subscription/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/subscription/subscription/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subscription/users/templates/users/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/subscription/users/templates/users/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subscription/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/subscription/users/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,7 +72,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622644725454</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Plan can be updated. Changes added for the user">
+      <created>1622644802446</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1622644802446</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -74,6 +92,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Plan can be updated. Changes added for the user" />
