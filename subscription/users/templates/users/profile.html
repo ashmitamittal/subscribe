@@ -7,7 +7,7 @@
        <img class="rounded-circle account-img" src="{{ user.profile.image.url }}">
        <div class="media-body">
          <h2 class="account-heading">{{ user.username }}</h2>
-         <p class="text-secondary">{{ user.email }}</p>
+         <p class="text-secondary">{{ user.email }}<br>{{user.profile}}</p>
        </div>
      </div>
          <form method="POST" enctype="multipart/form-data">
@@ -19,11 +19,7 @@
                {{ p_form|crispy }}
                <p></p>
                <p>PLan: {{ user.profile.plan_name }}</p>
-               {% if user.profile.subs_date is not defined %}
-               <p>Subscription Date: Not subscribed to a plan</p>
-               {% else %}
                <p>Subscription Date: {{ user.profile.subs_date|date:"F d, Y" }}</p>
-               {% endif %}
            </fieldset>
            <span style="padding: 2px"></span>
            <div class="form-group">

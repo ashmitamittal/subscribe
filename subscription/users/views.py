@@ -20,7 +20,6 @@ def register(request):
         if form.is_valid():
             dob_check = form.cleaned_data.get('date_of_birth')
             difference_in_years = relativedelta(date.today(), dob_check).years
-            # print(difference_in_years)
             if difference_in_years >= 18:
                 form.save()
                 messages.success(request, f"Your account has been created! You can now Log In!")
@@ -67,7 +66,8 @@ def plan_update(request, pk=1):
         plan = get_object_or_404(Plan, pk=pk)
 
         Profile.objects.filter(user=request.user).update(plan_name=plan,
-                                                               subs_date=datetime.datetime.utcnow())
+                                                               subs_date=datetime.datetime.utcnow(),
+                                                         active_subs=True)
         messages.success(request, f'You have been subscribed!')
         return redirect('user-home')
 

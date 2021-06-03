@@ -19,6 +19,7 @@ class Profile(models.Model):
     image = models.ImageField(default='default.jpg', upload_to='profile_pics')
     subs_date = models.DateTimeField(null=True)
     plan_name = models.ForeignKey(Plan, default=1, on_delete=models.CASCADE)
+    active_subs = models.BooleanField(default=False)
 
     def __str__(self):
         return f'{self.user.username} Profile'

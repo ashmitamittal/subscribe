@@ -39,15 +39,23 @@
     </div>
   </nav>
 </header>
-<h5 style="text-align: right;">Your current plan: {{ user.profile.plan_name }}</h5>
+{% if user.is_authenticated %}
+<h5 style="text-align: right; padding:10px;">Your current plan: {{ user.profile.plan_name }}</h5>
+{% endif %}
 <main role="main" class="container">
   <div class="row">
     <div class="col-md-8">
         {% if messages %}
             {% for message in messages %}
+            {% if message.tags == 'error' %}
+                <div class="alert alert-danger">
+                    {{ message }}
+                </div>
+            {% else %}
                 <div class="alert alert-{{ message.tags }}">
                     {{ message }}
                 </div>
+            {% endif %}
             {% endfor %}
         {% endif %}
       {% block content %}{% endblock %}

@@ -2,16 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da28a90e-4e2f-445c-9140-ae33aa17321d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/subscription/users/templates/users/password_reset.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subscription/users/templates/users/password_reset_complete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subscription/users/templates/users/password_reset_confirm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subscription/users/templates/users/password_reset_done.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subscription/subscription/celery.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subscription/users/tasks.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/subscription/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/subscription/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subscription/subscription/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/subscription/subscription/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/subscription/subscription/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/subscription/subscription/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subscription/subscription/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/subscription/subscription/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subscription/users/templates/users/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/subscription/users/templates/users/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subscription/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/subscription/users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subscription/users/templates/users/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/subscription/users/templates/users/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subscription/users/templates/users/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/subscription/users/templates/users/profile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/subscription/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/subscription/users/views.py" afterDir="false" />
+    </list>
+    <list id="0487a87e-21ba-4d92-b35f-45df7d9ce86c" name="Password reset function added" comment="">
+      <change beforePath="$PROJECT_DIR$/subscription/subscription/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/subscription/subscription/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -36,6 +39,14 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/subscription/subscription/settings.py">
+      <ranges>
+        <range start1="13" end1="13" start2="13" end2="14" changelist="da28a90e-4e2f-445c-9140-ae33aa17321d" />
+        <range start1="144" end1="144" start2="145" end2="159" changelist="0487a87e-21ba-4d92-b35f-45df7d9ce86c" />
+      </ranges>
+    </file>
   </component>
   <component name="ProjectId" id="1t7EZ0JYREtNvo3prqZHo8GWZTr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -60,6 +71,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="da28a90e-4e2f-445c-9140-ae33aa17321d" name="Default Changelist" comment="" />
+      <changelist id="0487a87e-21ba-4d92-b35f-45df7d9ce86c" name="Password reset function added" comment="" />
       <created>1622111778740</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -79,7 +91,21 @@
       <option name="project" value="LOCAL" />
       <updated>1622644802446</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Password reset function added">
+      <created>1622707044768</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1622707044768</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Password reset function added">
+      <created>1622707132283</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1622707132283</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -96,6 +122,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Plan can be updated. Changes added for the user" />
-    <option name="LAST_COMMIT_MESSAGE" value="Plan can be updated. Changes added for the user" />
+    <MESSAGE value="Password reset function added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Password reset function added" />
   </component>
 </project>
