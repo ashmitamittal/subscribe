@@ -66,7 +66,7 @@ def plan_update(request, pk=1):
         plan = get_object_or_404(Plan, pk=pk)
 
         Profile.objects.filter(user=request.user).update(plan_name=plan,
-                                                               subs_date=datetime.datetime.utcnow(),
+                                                               subs_date=datetime.datetime.now(),
                                                          active_subs=True)
         messages.success(request, f'You have been subscribed!')
         return redirect('user-home')
