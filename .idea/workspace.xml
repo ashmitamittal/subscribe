@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da28a90e-4e2f-445c-9140-ae33aa17321d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/subscription/subscription/celery.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subscription/users/tasks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subscription/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/subscription/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subscription/subscription/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/subscription/subscription/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subscription/subscription/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/subscription/subscription/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subscription/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/subscription/users/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subscription/users/templates/users/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/subscription/users/templates/users/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subscription/users/templates/users/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/subscription/users/templates/users/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subscription/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/subscription/users/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
-    <list id="0487a87e-21ba-4d92-b35f-45df7d9ce86c" name="Password reset function added" comment="">
-      <change beforePath="$PROJECT_DIR$/subscription/subscription/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/subscription/subscription/settings.py" afterDir="false" />
-    </list>
+    <list id="0487a87e-21ba-4d92-b35f-45df7d9ce86c" name="Password reset function added" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,14 +28,6 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/subscription/subscription/settings.py">
-      <ranges>
-        <range start1="13" end1="13" start2="13" end2="14" changelist="da28a90e-4e2f-445c-9140-ae33aa17321d" />
-        <range start1="144" end1="144" start2="145" end2="159" changelist="0487a87e-21ba-4d92-b35f-45df7d9ce86c" />
-      </ranges>
-    </file>
   </component>
   <component name="ProjectId" id="1t7EZ0JYREtNvo3prqZHo8GWZTr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
